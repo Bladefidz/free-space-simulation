@@ -1,3 +1,5 @@
+import math
+
 class Geometric(object):
 	def __init__(self, a, r):
 		"""
@@ -25,6 +27,12 @@ class Geometric(object):
 
 	def nextDirection(self):
 		raise NotImplementedError # don't change this!
+
+
+class Harmonic(Geometric):
+	"""docstring for Harmonic"""
+	def __init__(self, a, r):
+		super().__init__(1/a, 1/r)
 
 
 def test():
